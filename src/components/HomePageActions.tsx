@@ -1,15 +1,16 @@
 "use client";
 import { Post } from "@prisma/client";
 import { CheckIcon, CopyIcon, LucideRefreshCw } from "lucide-react";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Button } from "./ui/button";
 
 const HomePageActions = ({ post }: { post: Post }) => {
   const [copied, setCopied] = useState(false);
-
+  const router = useRouter();
   return (
     <div className="flex flex-col md:flex-row basis-1/4 gap-4">
-      <Button className="gap-3">
+      <Button className="gap-3" onClick={() => router.refresh()}>
         <LucideRefreshCw className="w-4 h-4" />
         Regenrate
       </Button>
