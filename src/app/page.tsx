@@ -2,6 +2,7 @@ import HomePageActions from "@/components/HomePageActions";
 import { prisma } from "@/lib/prisma";
 
 export const fetchCache = "force-no-store";
+export const revalidate = 0;
 
 export const getRandomPost = async () => {
   const postCount = await prisma.post.count();

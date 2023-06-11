@@ -8,7 +8,6 @@ import { Button } from "./ui/button";
 export const SignInButton = () => {
   const { data: session, status } = useSession();
 
-  console.log(session, status);
 
   if (status === "loading") {
     return <p>Loading...</p>;

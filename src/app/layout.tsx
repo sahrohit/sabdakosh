@@ -1,6 +1,5 @@
 import Navbar from "@/components/shared/Navbar";
 import AuthProvider from "@/context/AuthProvider";
-import { cn } from "@/lib/utils";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -17,13 +16,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // <AuthProvider>
+    <AuthProvider>
       <html lang="en">
-        <body className={cn(inter.className, "max-w-5xl mx-auto")}>
-          {/* <Navbar /> */}
-          <main>{children}</main>
+        <body className={inter.className}>
+          <div className="max-w-5xl !mx-auto">
+            <Navbar />
+            <main>{children}</main>
+          </div>
         </body>
       </html>
-    // </AuthProvider>
+    </AuthProvider>
   );
 }
