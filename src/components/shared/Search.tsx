@@ -32,8 +32,9 @@ const Search = () => {
 
   return (
     <div>
-      <Button variant="ghost" onClick={() => setOpen(true)}>
-        <SearchIcon className="w-6 h-6" />
+      <Button variant="ghost" onClick={() => setOpen(true)} className="gap-2">
+        <SearchIcon className="w-4 h-4" />
+        Search
       </Button>
       <CommandDialog open={open} onOpenChange={setOpen}>
         <CommandInput

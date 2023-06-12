@@ -19,13 +19,14 @@ const HomePage = async () => {
   const post = await getRandomPost();
 
   return (
-    <div className="grid place-items-center h-[90vh]">
+    <div className="grid place-items-center h-[80vh]">
       <div className="flex flex-col w-full justify-around items-center h-[50vh]">
         <div className="flex flex-col gap-4 basis-3/4 text-center px-4">
           <h1 className="text-3xl font-semibold leading-none tracking-tight">
             {post.nepali}
           </h1>
           <p className="text-xl text-muted-foreground">{post.roman}</p>
+          <p className="text-2xl ">{post.meaning}</p>
         </div>
         <HomePageActions post={post} />
       </div>
