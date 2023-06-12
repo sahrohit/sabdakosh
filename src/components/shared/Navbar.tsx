@@ -62,7 +62,25 @@ const Navbar = async () => {
         <Logo className="h-12" color="#123456" />
         <UseClient>
           <div className="flex flex-row items-center gap-2">
-            <SignInButton />
+            {session ? (
+              <div className="flex flex-row gap-6">
+                <Link href="/dashboard">
+                  <Image
+                    src={
+                      session?.user?.image ??
+                      `https://api.dicebear.com/6.x/micah/svg?size=256&seed=${session?.user?.name}`
+                    }
+                    alt={session?.user?.name ?? "User"}
+                    width={36}
+                    height={36}
+                    className="rounded-full"
+                  />
+                </Link>
+                <SignOutButton />
+              </div>
+            ) : (
+              <SignInButton />
+            )}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" className="ml-auto">
