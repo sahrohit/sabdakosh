@@ -1,34 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/github_username/repo_name">
+    <img src="./public/logo.svg" alt="Logo" width="160">
+  </a>
+
+  <h3 align="center">Sabdakosh</h3>
+
+  <p align="center">
+    Built with god knows what
+    <br />
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-typescript.svg)](https://forthebadge.com)
+
+</div>
+
+## About The Project
+
+<!-- GETTING STARTED -->
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running follow these simple example steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Clone the repo
+   ```sh copy
+   git clone https://github.com/sahrohit/sabdakosh.git
+   ```
+2. Install the project dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```sh copy
+   pnpm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Rename the `env.example` to `env.local` & update you enviroment variables in all the apps.
 
-## Learn More
+   ```js
+   API_KEY = YOUR_API_KEY;
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. Run the following commands to start the development server
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```sh copy
+   pnpm dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### After Setting Up
 
-## Deploy on Vercel
+To initialize the project,
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`pnpm dev` - Run project in development mode
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`pnpm build` - Generate production build for the project
+
+For other commands, check `scripts` in package.json.
+
+## Apps
+
+## Built With
+
+<div style="display: flex; flex-wrap: wrap;">
+<img src="https://img.icons8.com/color/48/000000/typescript.png" title="Typescript" alt="Typescript" width="50" height="50" />
+<img src="https://img.icons8.com/color/256/postgreesql.png" title="Postgresql" alt="Postgresql" width="50" height="50" />
+<img src="https://img.icons8.com/color/48/000000/nextjs.png" title="Nextjs" alt="Nextjs" width="50" height="50" />
+</div>
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
